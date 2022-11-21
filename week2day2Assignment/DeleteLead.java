@@ -44,12 +44,12 @@ public class DeleteLead {
 	    driver.findElement(By.xpath("//a[@class='subMenuButtonDangerous']")).click();
 	   
 	  
-	    driver.findElement(By.xpath("//a[text()='Find Leads']")).click(); //modified
-	    driver.findElement(By.xpath("//input[@name='id']")).sendKeys(Leadid);//modified
-		driver.findElement(By.xpath("//button[@id='ext-gen334']")).click();//modified
+	    driver.findElement(By.xpath("//a[text()='Find Leads']")).click(); 
+	    driver.findElement(By.xpath("//input[@name='id']")).sendKeys(Leadid);
+		driver.findElement(By.xpath("//button[@id='ext-gen334']")).click();
 	    
 	    Thread.sleep(2000);
-	    String norecord = driver.findElement(By.xpath("//div[@class='x-paging-info']")).getText();//modified
+	    String norecord = driver.findElement(By.xpath("//div[@class='x-paging-info']")).getText();
 	    System.out.println(norecord);//modified
 		
 		

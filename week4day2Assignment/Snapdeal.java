@@ -49,13 +49,13 @@ public class Snapdeal {
 			price1 = price1.replaceAll("Rs.", "");
 			price1 = price1.replaceAll(" ", "");
 			price1 = price1.replaceAll(",", "");
-			System.out.println("price1 is "+price1);
+			//System.out.println("price1 is "+price1);
 			if (price1 != "") {
 				int price2 = Integer.parseInt(price1);
 				pricelist.add(price2);
 				}
 		}
-		
+		System.out.println(pricelist);
 		int counter=0;
 		for(int i=0;i<(pricelist.size()-1);i++)
 		{
@@ -69,7 +69,9 @@ public class Snapdeal {
 			}
 		}
 		if (counter!=0)
-			System.out.println("");
+			System.out.println("price is not sorted");
+		else
+			System.out.println("price is sorted");
 		Set <Integer> priceset = new HashSet<Integer>(pricelist);
 		
 		int listsize = pricelist.size();
